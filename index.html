@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+   <title>tesla</title>
+</head>
+
+<body>
+   <div class="warpper">
+      <div class="tesla__photo">
+         <a href="index2.html">
+            <img src="./img/Tesla.svg">
+            <img class="Disks animation" src="./img/wheel.avif">
+            <img class="Disks2 animation" src="./img/wheel.avif">
+            <div class="circle"></div>
+            <div class="circle2"></div>
+         </a>
+      </div>
+
+      <div class="Tesla__forse">
+         <div class="power__reserve">
+            <span>Запас хода</span>
+            <h1 id="power"></h1>
+         </div>
+         <div class="power__reserve">
+            <span>Цена</span>
+            <h1>$89, 990</h1>
+         </div>
+      </div>
+
+      <div class="tesla">
+         <div class="tesla__Speed text">
+            <div class="tesla__Speed_km">
+               <span>Скорость автомобиля</span>
+               <h1 id="km"></h1>
+            </div>
+
+            <div class="tesla__level">
+               <img id="speed" data-speed="5" src="./img/top.png">
+               <img id="slow_down" data-speed="5" src="./img/down.png">
+            </div>
+         </div>
+
+         <div class="tesla__Speed text">
+            <div class="tesla__Speed_km">
+               <span>Температура за окнами</span>
+               <h1 id="conditioner"></h1>
+            </div>
+
+            <div class="tesla__level">
+               <img id="top" data-temp="1" src="./img/top.png">
+               <img id="bottom" data-temp="1" src="./img/down.png">
+            </div>
+         </div>
+
+         <div class="tesla__Speed text">
+            <div class="tesla__Speed_km">
+               <span>Диски</span>
+               <h1 id="disks">19</h1>
+            </div>
+
+            <div class="tesla__level">
+               <img id="disks_top" src="./img/top.png">
+               <img id="disks_bottom" src="./img/down.png">
+            </div>
+         </div>
+
+         <div class="conditioner text">
+            <span>Кондиционер</span>
+
+            <label id="switch__kd" data-kd="10" class="switch">
+               <input type="checkbox">
+               <span class="slider round"></span>
+            </label>
+         </div>
+
+         <div class="conditioner text">
+            <span>Версия Long Range</span>
+
+            <label class="switch">
+               <input type="checkbox">
+               <span class="slider round"></span>
+            </label>
+         </div>
+
+         <div class="conditioner text">
+            <span>Вид автомобиля</span>
+            <a href="#">
+               <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+               </label>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <script src="./js/script.js"></script>
+</body>
+
+</html>

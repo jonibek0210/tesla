@@ -1,0 +1,215 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+   display: flex;
+   gap: 10px;
+}
+
+body {
+   padding-bottom: 50px;
+}
+
+/* ===================================== */
+
+.warpper {
+   width: fit-content;
+   min-height: fit-content;
+   margin: 0 auto;
+}
+
+.tesla__photo {
+   position: relative;
+}
+
+.Disks {
+   position: absolute;
+   width: 115px;
+   height: 115px;
+   top: 335px;
+   right: 330px;
+   z-index: 2;
+}
+
+.circle {
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   top: 345px;
+   right: 338px;
+   z-index: 1;
+   border-radius: 50%;
+   background-color: #000;
+}
+
+.Disks2 {
+   position: absolute;
+   width: 115px;
+   height: 115px;
+   top: 335px;
+   left: 315px;
+   z-index: 2;
+}
+
+.circle2 {
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   top: 345px;
+   left: 322px;
+   border-radius: 50%;
+   background-color: #000;
+   z-index: 1;
+}
+
+.animation {
+   animation: rotate .3s ease infinite;
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotate(360deg);
+   }
+   50% {
+      transform: rotate(180deg);
+   }
+   100% {
+      transform: rotate(0deg);
+   }
+}
+
+.Tesla__forse {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 117px;
+   margin-bottom: 55px;
+}
+
+.power__reserve span {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+   color: #707070;
+}
+
+.power__reserve h1 {
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 79px;
+   color: #000000;
+}
+
+.text span {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   color: #707070;
+}
+
+.text h1 {
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 59px;
+   color: #000000;
+}
+
+.tesla {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.tesla__Speed {
+   display: flex;
+   gap: 34px;
+}
+
+.tesla__level {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 6px;
+}
+
+.tesla__level img {
+   display: block;
+   cursor: pointer;
+}
+
+.conditioner span {
+   display: block;
+}
+
+.conditioner {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 40px;
+   height: 20px;
+   display: block;
+}
+
+.switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+.slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   -webkit-transition: .4s;
+   transition: .4s;
+}
+
+.slider:before {
+   position: absolute;
+   content: "";
+   height: 15px;
+   width: 15px;
+   left: 3px;
+   bottom: 2.1px;
+   background-color: white;
+   -webkit-transition: .4s;
+   transition: .4s;
+}
+
+input:checked+.slider {
+   background-color: #2196F3;
+}
+
+input:focus+.slider {
+   box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+   -webkit-transform: translateX(20px);
+   -ms-transform: translateX(20px);
+   transform: translateX(20px);
+}
+
+.slider.round {
+   border-radius: 34px;
+}
+
+.slider.round:before {
+   border-radius: 50%;
+}

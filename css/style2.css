@@ -1,0 +1,155 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+/* ============================================= */
+
+.wrapper {
+   width: fit-content;
+   min-height: fit-content;
+   margin: 0 auto;
+}
+
+.salon__photo_block {
+   margin-bottom: 50px;
+}
+
+.salon__photo {
+   width: 1240px;
+   height: 697px;
+   object-fit: contain;
+}
+
+.Tesla__forse {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 117px;
+   margin-bottom: 55px;
+}
+
+.power__reserve span {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+   color: #707070;
+}
+
+.power__reserve h1 {
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 79px;
+   color: #000000;
+}
+
+.salon__color {
+   display: flex;
+   align-items: center;
+   max-width: fit-content;
+   margin: 0 auto;
+   gap: 50px;
+}
+
+.salon__colors {
+   width: fit-content;
+   height: fit-content;
+   display: flex;
+   gap: 10px;
+   margin-top: 10px;
+}
+
+.item {
+   cursor: pointer;
+   box-shadow: 0 0 20px grey;
+}
+
+.salon__colors__black {
+   background-color: black;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+}
+
+.salon__colors__white {
+   background-color: rgb(255, 255, 255);
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+}
+
+.salon__colors__beige {
+   background-color: beige;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+}
+
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 40px;
+   height: 20px;
+   display: block;
+   margin-top: 10px;
+}
+
+.switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+.slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #ccc;
+   -webkit-transition: .4s;
+   transition: .4s;
+}
+
+.slider:before {
+   position: absolute;
+   content: "";
+   height: 15px;
+   width: 15px;
+   left: 3px;
+   bottom: 2.1px;
+   background-color: white;
+   -webkit-transition: .4s;
+   transition: .4s;
+}
+
+input:checked+.slider {
+   background-color: #2196F3;
+}
+
+input:focus+.slider {
+   box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+   -webkit-transform: translateX(20px);
+   -ms-transform: translateX(20px);
+   transform: translateX(20px);
+}
+
+.slider.round {
+   border-radius: 34px;
+}
+
+.slider.round:before {
+   border-radius: 50%;
+}
